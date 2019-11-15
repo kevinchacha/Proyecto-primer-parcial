@@ -20,8 +20,11 @@ let generardatos = (datos,año,pais) =>{
                 var dist=datos[4].split(",")
                 
                 var pos1=0
+                
                 for (var i=0; i < dist.length; i++) {
-                    if (parseInt(dist[i].substring(2,6), 10)==año){
+                    var limit=dist[i]
+                    
+                    if (parseInt(dist[i].substring(1,limit.length-1), 10)==año){
                         
                         var pos1=i
                     }
@@ -30,10 +33,11 @@ let generardatos = (datos,año,pais) =>{
                  let data = '';
                  for (var i=4; i < datos.length; i++) {
                     try{
+                    
                     var datos2=datos[i].split(",")
-                    var datos3=datos2[1].substring(2,5)
+                    var datos3=datos2[1].substring(1,4)
+                    
                     if (datos3==pais){
-                        
                         limit2=datos2[pos1].length -2
                         var numero=datos2[pos1].substring(2,limit2)
                         data += "Nombre pais:\t"+datos2[0].substring(1,10)+"\n";
@@ -59,10 +63,10 @@ let generardatos = (datos,año,pais) =>{
                      num+=parseInt(datos5[pos1].substring(2,limite2), 10)
                      cont+=1
                      listop5.push(num)
-                     dictop5[datos5[0].substring(1,10)]=num
+                     dictop5[datos5[0].substring(1,datos5[0].length-1)]=num
                      if(numero>num){
                          lis5num.push(num)
-                         dicnum5[datos5[0].substring(1,10)]=num
+                         dicnum5[datos5[0].substring(1,datos5[0].length-1)]=num
                      }
                     }
                      }
@@ -107,12 +111,7 @@ let generardatos = (datos,año,pais) =>{
         };
 
 
-leercsv("API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv")
-.then(archivo =>{
-    generardatos(archivo,2012,"ESP").then(archivo2 =>{
-        console.log(archivo2)
-    }).catch((err)=> console.log("error: ",err))
-}).catch((err)=> console.log("error: ",err))
+
 
 
 module.exports = {

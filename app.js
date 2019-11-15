@@ -1,21 +1,34 @@
+const fs=require('fs');
+const chalk = require('chalk');
 const {argv} = require('./config/yargs.js')
 
-const{publicar,guardar} = require('./archivos/metodos.js');
+const{leercsv,generardatos} = require('./archivos/conexion.js');
 
 let comando = argv._[0]
 console.log(comando)
 switch(comando){
     case 'publicar':
-        publicar(argv.file,argv.country,argv.year)
-            .then(console.log(argv.year,argv.country,argv.file))
-            .catch(e => console.log(e));
-        console.log(module);
+        leercsv(argv.file)
+        .then(archivo =>{
+            generardatos(archivo,argv.year,argv.country).then(archivo2 =>{
+            
+            console.log(chalk.blue(archivo2))
+            }).catch((err)=> console.log("error: ",err))
+        }).catch((err)=> console.log("error: ",err))
         break;
     case 'guardar':
-        guardar(argv.file,argv.country,argv.year,argv.out)
-            .then(console.log('Listado'))
-            .catch(e => console.log(e));
-        console.log(module);
+        leercsv(argv.file)
+        .then(archivo =>{
+            generardatos(archivo,argv.year,argv.country).then(archivo2 =>{
+                fs.writeFile(`./${argv.out}.txt`, `${archivo2}`, error => {
+                    if (error)
+                      console.log(error);
+                    else
+                      console.log(chalk.green('El archivo fue creado'));
+                      console.log(chalk.blue(archivo2));
+                  });
+            }).catch((err)=> console.log("error: ",err))
+        }).catch((err)=> console.log("error: ",err))
         break;
     default:
         console.log('Comando no valido!')
