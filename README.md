@@ -11,7 +11,7 @@ git clone https://github.com/kevinchacha/Proyecto-primer-parcial.git
 cd Proyecto-primer-parcial
 
 3. Debemos descargar unicamente el CSV de la pagina https://datos.bancomundial.org/indicador/IT.CEL.SETS 
-descargar el archivo "API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv" y copiarlo en la carpeta del Proyecto
+descargar el archivo "API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv" y agregar el path del mismo.
 
 
 4. Instalar las siguientes librerías:
