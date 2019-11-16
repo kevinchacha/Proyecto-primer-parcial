@@ -15,7 +15,25 @@ git clone https://github.com/kevinchacha/Proyecto-primer-parcial.git
 
 cd Proyecto-primer-parcial
 
-4. DATOS:
+4. Instalar las siguientes librerías:
+Para instalar yards:
+npm i yargs
+Para instalar el Fs:
+npm install file-system --save
+Para los colores :
+npm install chalk
+
+5. EJECUTAMOS EL PROGRAMA :
+
+Ejemplo para la ejecucion de publicar: 
+
+node app.js publicar  --file API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv --country AUS --year 2018
+
+Ejemplo para la ejecicion de guardar:
+
+node app.js guardar --file API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv --country ARG  --year 1994  --out eje
+
+DATOS:
 
 --file -f: Permite establecer el path del archivo CSV que
 contiene los datos a analizar
@@ -30,18 +48,5 @@ requiere las estadísticas. Por defecto, 2018
 --out -o: Establece el nombre del archivo donde se almacenrá
 los resultados.
 
-6. EJEMPLOS DE EJECUCION :
 
-Ejemplo para la ejecucion de publicar: 
-node app.js publicar  --file API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv --country AUS --year 2018
 
-Ejemplo para la ejecicion de guardar:
-node app.js guardar --file API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv --country ARG  --year 1994  --out eje
-
-7. Librerias que se necesita :
-Para instalar yards:
-npm i yargs
-Para instalar el Fs:
-npm install file-system --save
-Para los colores :
-npm install chalk
