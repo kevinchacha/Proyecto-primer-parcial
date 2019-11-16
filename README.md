@@ -2,18 +2,16 @@
 Pasos para la utilización de esta herramienta
 La herramienta permite generar un archivo txt con los datos obtenidos desde un archivo de tipo csv
 
-1. Debemos descargar unicamente el CSV de la pagina https://datos.bancomundial.org/indicador/IT.CEL.SETS 
-descargar este archivo
-
-API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv
-
-2. Luego hay que clonar el repositorio en el directorio creado con el siguiente comando:
+1. Clonar el repositorio del proyecto con el siguiente comando:
 
 git clone https://github.com/kevinchacha/Proyecto-primer-parcial.git
 
-3. Ingresamos a la carpeta clonada del proyecto 
+2. Ingresamos a la carpeta clonada del proyecto 
 
 cd Proyecto-primer-parcial
+
+3. Debemos descargar unicamente el CSV de la pagina https://datos.bancomundial.org/indicador/IT.CEL.SETS 
+descargar el archivo "API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv" y copiarlo en la carpeta del Proyecto
 
 4. Instalar las siguientes librerías:
 Para instalar yards:
