@@ -7,19 +7,15 @@ descargar este archivo
 
 API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv
 
-2. Desde la terminal de Ubuntu crear un directorio donde descargaremos el repositorio, por ejemplo:
+2. Luego hay que clonar el repositorio en el directorio creado con el siguiente comando:
 
-mkdir Proyecto
+git clone https://github.com/kevinchacha/Proyecto-primer-parcial.git
 
-3. Luego hay que clonar el repositorio en el directorio creado con el siguiente comando:
-
-git clone https://github.com/jonaxmc/Repaso.git
-
-4. Ingresamos a la carpeta clonada del proyecto 
+3. Ingresamos a la carpeta clonada del proyecto 
 
 cd Proyecto-primer-parcial
 
-5. DATOS:
+4. DATOS:
 
 --file -f: Permite establecer el path del archivo CSV que
 contiene los datos a analizar
