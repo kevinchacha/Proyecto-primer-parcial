@@ -3,8 +3,9 @@ Pasos para la utilización de esta herramienta
 La herramienta permite generar un archivo txt con los datos obtenidos desde un archivo de tipo csv
 
 1. Clonar el repositorio del proyecto con el siguiente comando:
-
+'''
 git clone https://github.com/kevinchacha/Proyecto-primer-parcial.git
+'''
 
 2. Ingresamos a la carpeta clonada del proyecto 
 
