@@ -23,7 +23,7 @@ switch (comando) {
                     });
 
                     server.listen(port, hostname, () => {
-                        console.log(`Server running at http://${hostname}:${port}/`);
+                        console.log(`Para probar la página por favor ingrese a; http://${hostname}:${port}/`);
                     });
                     console.log(chalk.blue(archivo2))
                 }).catch((err) => console.log("error: ", err))
