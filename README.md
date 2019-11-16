@@ -7,9 +7,19 @@ descargar este archivo
 
 API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv
 
-2.Pasos para la ejecucion
+2. Desde la terminal de Ubuntu crear un directorio donde descargaremos el repositorio, por ejemplo:
 
-DATOS:
+mkdir Proyecto
+
+3. Luego hay que clonar el repositorio en el directorio creado con el siguiente comando:
+
+git clone https://github.com/jonaxmc/Repaso.git
+
+4. Ingresamos a la carpeta clonada del proyecto 
+
+cd Proyecto-primer-parcial
+
+5. DATOS:
 
 --file -f: Permite establecer el path del archivo CSV que
 contiene los datos a analizar
@@ -24,22 +34,17 @@ requiere las estadísticas. Por defecto, 2018
 --out -o: Establece el nombre del archivo donde se almacenrá
 los resultados.
 
-EJEMPLOS DE EJECUCION :
-publicar:
-node app.js publicar  --file path --country codigopais --year año pais
+6. EJEMPLOS DE EJECUCION :
 
-Ejemplo para la ejecucion de publicar 
+Ejemplo para la ejecucion de publicar: 
 node app.js publicar  --file API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv --country AUS --year 2018
 
-guardar:
-node app.js guardar  --file API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv --country codigopais --year año pais --out nombrearchivo
+Ejemplo para la ejecicion de guardar:
+node app.js guardar --file API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv --country ARG  --year 1994  --out eje
 
-Ejemplo para la ejecicion de guardar
-node app.js guardar  --file 'path' --country AUS --year 2018 --out nombredelarchivo
-
-librerias que se necesita :
+7. Librerias que se necesita :
 Para instalar yards:
-npm install --save yard
+npm i yargs
 Para instalar el Fs:
 npm install file-system --save
 Para los colores :
