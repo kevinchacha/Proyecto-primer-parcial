@@ -1,5 +1,5 @@
 # Proyecto-primer-parcial
-### Integrantes: Jonathan Mañay, Esteban Carrera, Anthony Cabezas, Kevin Chacha
+### Integrantes: Jonathan Mañay, Esteban Carrera, Anthony Cabezas, Kevin Chacha, Boris Tapia
 Pasos para la utilización de esta herramienta
 La herramienta permite generar un archivo txt con los datos obtenidos desde un archivo de tipo csv
 
@@ -16,20 +16,46 @@ descargar el archivo "API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv" y agregar el pat
 
 
 4. Instalar las siguientes librerías:
+
+INSTALAR LIBRERIA MEDIANTE NPM SCRIPT
+
+Instalar Yards:
+#### npm run instalar_Yarg 
+
+Instalar Fs:
+#### npm run instalar_fs
+
+Instalar libreria Chalk (colores):
+#### npm run instalar_colores
+
+INSTALAR MEDIANTE COMANDOS
+
 Para instalar yards:
 npm i yargs
+
 Para instalar el Fs:
 npm install file-system --save
+
 Para los colores :
 npm install chalk
+
+#### NOTA(INSTALAR USANDO COMANDOS SOLO SI NO FUNCIONA LOS NPM SCRIPT)
 
 5. EJECUTAMOS EL PROGRAMA :
 
 Ejemplo para la ejecucion de publicar: 
 
+#### npm run ejemplo_Mostrar 
+
+O ejecutar el siguiente comando
+
 node app.js publicar  --file API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv --country AUS --year 2018
 
-Ejemplo para la ejecicion de guardar:
+Ejemplo para la ejecucion de guardar:
+
+#### npm run ejemplo_Guardar
+
+O ejecutar el siguiente comando
 
 node app.js guardar --file API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv --country ARG  --year 1994  --out eje
 
