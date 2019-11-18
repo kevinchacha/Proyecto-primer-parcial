@@ -19,7 +19,7 @@ descargar el archivo "API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv" y agregar el pat
 
 INSTALAR LIBRERIA MEDIANTE NPM SCRIPT
 
-Instalar Yards:
+Instalar Yargs:
 #### npm run instalar_Yarg 
 
 Instalar Fs:
@@ -30,7 +30,7 @@ Instalar libreria Chalk (colores):
 
 INSTALAR MEDIANTE COMANDOS
 
-Para instalar yards:
+Para instalar yargs:
 npm i yargs
 
 Para instalar el Fs:
