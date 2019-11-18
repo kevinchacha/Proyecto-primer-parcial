@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-primer-parcial-master",
+  "version": "1.0.0",
+  "description": "Proyecto",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "instalar_Yarg": "npm install yargs",
+    "instalar_fs": "npm install file-system --save",
+    "instalar_colores": "npm install chalk",
+    "ejemplo_Mostrar": "node app.js publicar --file API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv --country AUS --year 2018",
+    "ejemplo_Guardar": "node app.js guardar --file API_IT.CEL.SETS_DS2_es_csv_v2_485339.csv --country ARG --year 1994 --out eje"
+  },
+  "author": "Chacha,Tapia,Mañay,Cabezas,Carrera",
+  "license": "ISC",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "yargs": "^15.0.1"
+  }
+}
