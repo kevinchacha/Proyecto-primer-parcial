@@ -37,7 +37,7 @@ let optg = {
 }
 
 const argv = require('yargs')
-    .command('publicar', 'Crea un archivo co la tabla de multiplicar', opt)
+    .command('publicar', 'Publica los datos de los paises', opt)
     .command('guardar', 'Guarda los datos de los paises', optg)
     .help()
     .argv;
